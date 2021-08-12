@@ -92,14 +92,6 @@ for i in df.loc[0]:
 empty_table        
 
 
-# In[ ]:
-
-
-df        
-
-
-# In[ ]:
-
 
 ## cheching for the header 
 
@@ -147,15 +139,6 @@ if table_use==False:
                 break
 
 
-# In[ ]:
-
-
-table_use
-
-
-# In[ ]:
-
-
 bounding_box=tables[5]._bbox   ## Bottom_left_x, Boottom_left_y, top_right_X, top_right_y
 bounding_box
 
@@ -173,21 +156,6 @@ lower_text_rect.append(792-bounding_box[1]+20)
 lower_text_rect.append(bounding_box[2]+20)
 lower_text_rect.append(792-bounding_box[1]+20+150)
 print(lower_text_rect)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 ## Extracting text above the table :
@@ -233,10 +201,6 @@ if(upper_text==""):
 
     
 
-
-# In[ ]:
-
-
 ## Extracting text below the table :
 
 rect=lower_text_rect  # rect list two
@@ -277,10 +241,6 @@ if(lower_text==""):
         lower_text=lower_text+a+" " 
 
     
-
-
-# In[ ]:
-
 
 df=df_orig
 table_header=""
@@ -337,9 +297,6 @@ for i in df.columns:
     final_columns.append(i.replace('.',''))
 df.columns=final_columns 
         
-
-
-# In[ ]:
 
 
 new_columns=[]
